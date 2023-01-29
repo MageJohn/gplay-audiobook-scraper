@@ -1,0 +1,28 @@
+{
+  "name": "gplay-audiobook-scraper",
+  "version": "0.0.1",
+  "description": "Scrape metadata for audiobooks exported from Google Play",
+  "packageManager": "yarn@3.3.1",
+  "type": "commonjs",
+  "scripts": {
+    "run": ""
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "jsdom": "^21.1.0",
+    "ts-dedent": "^2.2.0"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.59",
+    "@swc/core": "^1.3.30",
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@types/jsdom": "^20.0.1",
+    "@types/node": "^18.11.18",
+    "@types/prettier": "^2",
+    "esbuild": "^0.17.5",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "$schema": "https://json.schemastore.org/package.json"
+}
