@@ -30,7 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@swc/cli", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:0.1.59"],\
             ["@swc/core", "npm:1.3.30"],\
-            ["@tsconfig/node-lts-strictest-esm", "npm:18.12.1"],\
+            ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:20.0.1"],\
             ["@types/node", "npm:18.11.18"],\
             ["@types/prettier", "npm:2.7.2"],\
@@ -472,15 +472,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@tsconfig/node-lts-strictest-esm", [\
-        ["npm:18.12.1", {\
-          "packageLocation": "./.yarn/cache/@tsconfig-node-lts-strictest-esm-npm-18.12.1-291f53004c-cc7b246485.zip/node_modules/@tsconfig/node-lts-strictest-esm/",\
-          "packageDependencies": [\
-            ["@tsconfig/node-lts-strictest-esm", "npm:18.12.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["@tsconfig/node10", [\
         ["npm:1.0.9", {\
           "packageLocation": "./.yarn/cache/@tsconfig-node10-npm-1.0.9-f2e2d20feb-a33ae4dc2a.zip/node_modules/@tsconfig/node10/",\
@@ -513,6 +504,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tsconfig-node16-npm-1.0.3-6a4a30eda2-3a8b657dd0.zip/node_modules/@tsconfig/node16/",\
           "packageDependencies": [\
             ["@tsconfig/node16", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tsconfig/node16-strictest", [\
+        ["npm:1.0.4", {\
+          "packageLocation": "./.yarn/cache/@tsconfig-node16-strictest-npm-1.0.4-764f549f64-f644352bdb.zip/node_modules/@tsconfig/node16-strictest/",\
+          "packageDependencies": [\
+            ["@tsconfig/node16-strictest", "npm:1.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1543,7 +1543,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gplay-audiobook-scraper", "workspace:."],\
             ["@swc/cli", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:0.1.59"],\
             ["@swc/core", "npm:1.3.30"],\
-            ["@tsconfig/node-lts-strictest-esm", "npm:18.12.1"],\
+            ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:20.0.1"],\
             ["@types/node", "npm:18.11.18"],\
             ["@types/prettier", "npm:2.7.2"],\

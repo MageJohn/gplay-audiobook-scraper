@@ -9,7 +9,7 @@ import { name, version, description } from "../package.json";
 import type { VolumeOverview, ContentInfo, Chapter } from "./types";
 
 const escapeString = (string: string): string =>
-  string.replaceAll(/[=;#\\\n]/g, "$&");
+  string.replace(/[=;#\\\n]/g, "$&");
 
 const formatChapterMetadata = (chapters: Chapter[], endTimestamp: string) =>
   chapters
