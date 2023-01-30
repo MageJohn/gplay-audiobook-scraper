@@ -2,7 +2,7 @@ import { stdout } from "node:process";
 
 import { Command } from "commander";
 import { JSDOM } from "jsdom";
-import dedent from "ts-dedent";
+import { dedent } from "ts-dedent";
 
 import { name, version, description } from "../package.json";
 
@@ -98,10 +98,8 @@ program
     stdout.write(await scrape(file));
   });
 
-function main() {
-  program.parseAsync().catch((reason) => {
-    throw Error(reason);
-  });
+async function main() {
+  await program.parseAsync();
 }
 
 export default main;
