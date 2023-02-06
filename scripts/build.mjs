@@ -2,8 +2,7 @@
 import * as fs from "node:fs/promises";
 
 import * as esbuild from "esbuild";
-import yargs from "yargs";
-import { hideBin } from "yargs/helpers";
+import { Command } from "commander";
 
 const outDir = "dist";
 
@@ -35,28 +34,27 @@ async function watch() {
   await ctx.watch();
 }
 
-await yargs(hideBin(process.argv))
-  .command("clean", "clean the built files", {}, clean)
-  .command("watch", "watch files and rebuild on change", {}, watch)
-  .command(
-    "$0",
-    "bundle the application",
-    {
-      analyse: {
-        alias: "a",
-        type: "boolean",
-        default: false,
-      },
-    },
-    async (argv) => {
-      const result = await bundle({ metafile: argv.analyse });
-      if (argv.analyse && result.metafile) {
-        console.log(await esbuild.analyzeMetafile(result.metafile));
-      }
+const program = new Command();
+
+program.command("clean").description("clean the built files").action(clean);
+
+program
+  .command("watch")
+  .description("watch files and rebuild on change")
+  .action(watch);
+
+program
+  .name("bundle")
+  .description("bundle the application")
+  .option(
+    "-a, --analyse",
+    "after bundling print an analysis of the bundle size to the screen",
+    false
+  ).action(async (args) => {
+    const result = await bundle({ metafile: args.analyse });
+    if (args.analyse && result.metafile) {
+      console.log(await esbuild.analyzeMetafile(result.metafile));
     }
-  )
-  .help()
-  .alias({ h: "help" })
-  .version(false)
-  .strict()
-  .parseAsync();
+  })
+
+await program.parseAsync();
