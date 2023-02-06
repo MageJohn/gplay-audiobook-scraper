@@ -5,6 +5,15 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@commander-js/extra-typings@npm:^10.0.2":
+  version: 10.0.2
+  resolution: "@commander-js/extra-typings@npm:10.0.2"
+  peerDependencies:
+    commander: 10.0.x
+  checksum: 7b0775c46acafffd68f58b046e0a0203794cd503ee6cc2c73c0ccfd6dd66eb2fe675347af49634e5a089dfebda603ed28594ba708e329f43ef27e36e52326e59
+  languageName: node
+  linkType: hard
+
 "@esbuild/android-arm64@npm:0.17.5":
   version: 0.17.5
   resolution: "@esbuild/android-arm64@npm:0.17.5"
@@ -495,6 +504,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "gplay-audiobook-scraper@workspace:."
   dependencies:
+    "@commander-js/extra-typings": ^10.0.2
     "@tsconfig/node16-strictest": ^1.0.4
     "@types/jsdom": ^20.0.1
     "@types/node": ^18.11.18

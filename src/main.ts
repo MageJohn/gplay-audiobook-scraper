@@ -1,6 +1,6 @@
 import { stdout } from "node:process";
 
-import { Command } from "commander";
+import { Command } from "@commander-js/extra-typings";
 
 import { name, version, description } from "../package.json";
 import { formatFFMetadata } from "./formatFFMetadata";
@@ -13,7 +13,7 @@ program
   .version(version)
   .description(description)
   .argument("<file>")
-  .action(async (file: string) => {
+  .action(async (file) => {
     const { volumeOverview, contentInfo } = await scrapeMetadata(file);
     stdout.write(formatFFMetadata(volumeOverview, contentInfo));
   });

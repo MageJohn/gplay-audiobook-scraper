@@ -2,7 +2,7 @@
 import * as fs from "node:fs/promises";
 
 import * as esbuild from "esbuild";
-import { Command } from "commander";
+import { Command } from "@commander-js/extra-typings";
 
 const outDir = "dist";
 

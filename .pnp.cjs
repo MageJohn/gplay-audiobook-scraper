@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@commander-js/extra-typings", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:10.0.2"],\
             ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:20.0.1"],\
             ["@types/node", "npm:18.11.18"],\
@@ -40,6 +41,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@commander-js/extra-typings", [\
+        ["npm:10.0.2", {\
+          "packageLocation": "./.yarn/cache/@commander-js-extra-typings-npm-10.0.2-43e78ae649-7b0775c46a.zip/node_modules/@commander-js/extra-typings/",\
+          "packageDependencies": [\
+            ["@commander-js/extra-typings", "npm:10.0.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:10.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/@commander-js-extra-typings-virtual-f63b2824d5/0/cache/@commander-js-extra-typings-npm-10.0.2-43e78ae649-7b0775c46a.zip/node_modules/@commander-js/extra-typings/",\
+          "packageDependencies": [\
+            ["@commander-js/extra-typings", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:10.0.2"],\
+            ["@types/commander", null],\
+            ["commander", "npm:10.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/commander",\
+            "commander"\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@esbuild/android-arm", [\
@@ -578,6 +601,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["gplay-audiobook-scraper", "workspace:."],\
+            ["@commander-js/extra-typings", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:10.0.2"],\
             ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:20.0.1"],\
             ["@types/node", "npm:18.11.18"],\
