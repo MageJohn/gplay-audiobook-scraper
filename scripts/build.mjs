@@ -22,7 +22,8 @@ async function clean() {
 }
 
 /**
- * @param {{ metafile: boolean }} options
+ * @param {Object} options
+ * @param {boolean} options.metafile
  */
 async function bundle({ metafile }) {
   await clean();
