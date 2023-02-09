@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.18.12"],\
             ["commander", "npm:10.0.0"],\
             ["esbuild", "npm:0.17.6"],\
+            ["husky", "npm:8.0.3"],\
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
             ["prettier", "npm:2.8.4"],\
             ["ts-dedent", "npm:2.2.0"],\
@@ -604,6 +605,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.18.12"],\
             ["commander", "npm:10.0.0"],\
             ["esbuild", "npm:0.17.6"],\
+            ["husky", "npm:8.0.3"],\
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
             ["prettier", "npm:2.8.4"],\
             ["ts-dedent", "npm:2.2.0"],\
@@ -641,6 +643,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["https-proxy-agent", "npm:5.0.1"],\
             ["agent-base", "npm:6.0.2"],\
             ["debug", "virtual:428f325a939c2653ad822eb3d75efb02ac311523dd0d4f9645afc39ea00bd86eceac35a9d59c9b6977d76b670a4ef0ae057ea572338a44729aa592711a8c05a3#npm:4.3.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["husky", [\
+        ["npm:8.0.3", {\
+          "packageLocation": "./.yarn/cache/husky-npm-8.0.3-b0b59c5127-837bc7e441.zip/node_modules/husky/",\
+          "packageDependencies": [\
+            ["husky", "npm:8.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\

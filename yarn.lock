@@ -510,6 +510,7 @@ __metadata:
     "@types/node": ^16.18.12
     commander: ^10.0.0
     esbuild: ^0.17.6
+    husky: ^8.0.3
     jsdom: ^21.1.0
     prettier: ^2.8.4
     ts-dedent: ^2.2.0
@@ -546,6 +547,15 @@ __metadata:
     agent-base: 6
     debug: 4
   checksum: 571fccdf38184f05943e12d37d6ce38197becdd69e58d03f43637f7fa1269cf303a7d228aa27e5b27bbd3af8f09fd938e1c91dcfefff2df7ba77c20ed8dfc765
+  languageName: node
+  linkType: hard
+
+"husky@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "husky@npm:8.0.3"
+  bin:
+    husky: lib/bin.js
+  checksum: 837bc7e4413e58c1f2946d38fb050f5d7324c6f16b0fd66411ffce5703b294bd21429e8ba58711cd331951ee86ed529c5be4f76805959ff668a337dbfa82a1b0
   languageName: node
   linkType: hard
 
