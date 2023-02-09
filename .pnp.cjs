@@ -32,7 +32,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:20.0.1"],\
             ["@types/node", "npm:18.11.18"],\
-            ["@types/prettier", "npm:2.7.2"],\
             ["commander", "npm:10.0.0"],\
             ["esbuild", "npm:0.17.5"],\
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
@@ -298,15 +297,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-18.11.18-d61e8a4a20-03f17f9480.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:18.11.18"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@types/prettier", [\
-        ["npm:2.7.2", {\
-          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.7.2-6b2e2f518f-b47d76a525.zip/node_modules/@types/prettier/",\
-          "packageDependencies": [\
-            ["@types/prettier", "npm:2.7.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -605,7 +595,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:20.0.1"],\
             ["@types/node", "npm:18.11.18"],\
-            ["@types/prettier", "npm:2.7.2"],\
             ["commander", "npm:10.0.0"],\
             ["esbuild", "npm:0.17.5"],\
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
