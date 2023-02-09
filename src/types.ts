@@ -17,7 +17,7 @@ export type VolumeOverview = [
       number, // unknown
       string, // primary color
       number, // unknown
-      number, // unknown
+      number // unknown
     ][],
     string, // language code
     string, // details link
@@ -31,10 +31,9 @@ export type VolumeOverview = [
       unknown[], // unknown (some ids?)
       string, // duration
       string, // unknown
-      string[], // narrators
+      string[] // narrators
       // ...
-    ],
+    ]
     // ...
-  ],
-]
-
+  ]
+];

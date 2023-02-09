@@ -5,5 +5,5 @@
     "module": "nodenext",
     "resolveJsonModule": true,
     "exactOptionalPropertyTypes": false
-  },
+  }
 }

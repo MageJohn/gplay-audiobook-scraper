@@ -51,11 +51,12 @@ program
     "-a, --analyse",
     "after bundling print an analysis of the bundle size to the screen",
     false
-  ).action(async (args) => {
+  )
+  .action(async (args) => {
     const result = await bundle({ metafile: args.analyse });
     if (args.analyse && result.metafile) {
       console.log(await esbuild.analyzeMetafile(result.metafile));
     }
-  })
+  });
 
 await program.parseAsync();
