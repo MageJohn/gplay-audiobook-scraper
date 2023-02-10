@@ -1,4 +1,4 @@
-import { dedent } from "ts-dedent";
+import dedent from "string-dedent";
 import type { ContentInfo, VolumeOverview } from "./types";
 
 const escapeString = (string: string): string =>

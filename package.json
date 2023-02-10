@@ -15,7 +15,7 @@
     "@commander-js/extra-typings": "^10.0.2",
     "commander": "^10.0.0",
     "jsdom": "^21.1.0",
-    "ts-dedent": "^2.2.0"
+    "string-dedent": "^3.0.1"
   },
   "devDependencies": {
     "@tsconfig/node16-strictest": "^1.0.4",
