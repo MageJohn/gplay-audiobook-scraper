@@ -21,10 +21,12 @@
     "@tsconfig/node16-strictest": "^1.0.4",
     "@types/jsdom": "^21.1.0",
     "@types/node": "^16.18.12",
+    "@types/semver": "^7",
     "ava": "^5.2.0",
     "esbuild": "^0.17.6",
     "husky": "^8.0.3",
     "prettier": "^2.8.4",
+    "semver": "^7.3.8",
     "typescript": "^4.9.5"
   },
   "engines": {

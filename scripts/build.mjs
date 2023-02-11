@@ -2,9 +2,17 @@
 import * as fs from "node:fs/promises";
 
 import * as esbuild from "esbuild";
+import { minVersion } from "semver";
 import { Command } from "@commander-js/extra-typings";
 
+// @ts-ignore -- import assertion is fine in an mjs file
+import manifest from "../package.json" assert { type: "json" };
+
 const outDir = "dist";
+
+const targets = Object.entries(manifest.engines).map(
+  ([engine, range]) => `${engine}${minVersion(range)}`
+);
 
 /** @type {esbuild.BuildOptions} */
 const buildOptions = {
@@ -15,6 +23,7 @@ const buildOptions = {
   packages: "external",
   logLevel: "info",
   format: "esm",
+  target: targets,
 };
 
 async function clean() {

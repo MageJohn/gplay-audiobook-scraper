@@ -32,12 +32,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:21.1.0"],\
             ["@types/node", "npm:16.18.12"],\
+            ["@types/semver", "npm:7.3.13"],\
             ["ava", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:5.2.0"],\
             ["commander", "npm:10.0.0"],\
             ["esbuild", "npm:0.17.6"],\
             ["husky", "npm:8.0.3"],\
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
             ["prettier", "npm:2.8.4"],\
+            ["semver", "npm:7.3.8"],\
             ["string-dedent", "npm:3.0.1"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
@@ -368,6 +370,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-18.13.0-00f732af8e-4ea10f8802.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:18.13.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/semver", [\
+        ["npm:7.3.13", {\
+          "packageLocation": "./.yarn/cache/@types-semver-npm-7.3.13-56212b60da-00c0724d54.zip/node_modules/@types/semver/",\
+          "packageDependencies": [\
+            ["@types/semver", "npm:7.3.13"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1502,12 +1513,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:21.1.0"],\
             ["@types/node", "npm:16.18.12"],\
+            ["@types/semver", "npm:7.3.13"],\
             ["ava", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:5.2.0"],\
             ["commander", "npm:10.0.0"],\
             ["esbuild", "npm:0.17.6"],\
             ["husky", "npm:8.0.3"],\
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
             ["prettier", "npm:2.8.4"],\
+            ["semver", "npm:7.3.8"],\
             ["string-dedent", "npm:3.0.1"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
