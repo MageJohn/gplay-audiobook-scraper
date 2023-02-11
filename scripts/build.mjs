@@ -4,6 +4,7 @@ import * as fs from "node:fs/promises";
 import * as esbuild from "esbuild";
 import { minVersion } from "semver";
 import { Command } from "@commander-js/extra-typings";
+import esMain from "es-main";
 
 // @ts-ignore -- import assertion is fine in an mjs file
 import manifest from "../package.json" assert { type: "json" };
@@ -68,4 +69,7 @@ program
     }
   });
 
-await program.parseAsync();
+// @ts-ignore -- import.meta was being incorrectly flagged
+if (esMain(import.meta)) {
+  await program.parseAsync();
+}

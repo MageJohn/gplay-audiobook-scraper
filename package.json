@@ -4,10 +4,10 @@
   "description": "Scrape metadata for audiobooks exported from Google Play",
   "packageManager": "yarn@3.4.1",
   "type": "module",
-  "bin": "./bin/gplay-audiobook-scraper.mjs",
+  "bin": "./dist/main.js",
   "scripts": {
     "build": "./scripts/build.mjs",
-    "dev": "yarn build && ./bin/gplay-audiobook-scraper.mjs",
+    "dev": "yarn build && ./dist/main.js",
     "repo-setup": "husky install",
     "test": "ava",
     "format": "prettier -w ."
@@ -15,6 +15,7 @@
   "dependencies": {
     "@commander-js/extra-typings": "^10.0.2",
     "commander": "^10.0.0",
+    "es-main": "^1.2.0",
     "jsdom": "^21.1.0",
     "string-dedent": "^3.0.1"
   },

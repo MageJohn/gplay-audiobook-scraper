@@ -1,6 +1,8 @@
+#!/usr/bin/env node
 import { stdout } from "node:process";
 
 import { Command } from "@commander-js/extra-typings";
+import esMain from "es-main";
 
 import { name, version, description } from "../package.json";
 import { formatFFMetadata } from "./formatFFMetadata";
@@ -18,8 +20,11 @@ program
     stdout.write(formatFFMetadata(volumeOverview, contentInfo));
   });
 
-async function main() {
+export default async function main() {
   await program.parseAsync();
 }
 
-export default main;
+// @ts-ignore -- import.meta was being incorrectly flagged
+if (esMain(import.meta)) {
+  await main();
+}

@@ -983,6 +983,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es-main@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "es-main@npm:1.2.0"
+  checksum: b1feaaa71c0c5b0c494cd7d4f1fdb32fcdc9835b824ca2f61a7fbb899627305d88efef584490c24ebacde79289ac14908823c066176e15a784c49fa924db9b0b
+  languageName: node
+  linkType: hard
+
 "esbuild@npm:^0.17.6":
   version: 0.17.6
   resolution: "esbuild@npm:0.17.6"
@@ -1318,6 +1325,7 @@ __metadata:
     "@types/semver": ^7
     ava: ^5.2.0
     commander: ^10.0.0
+    es-main: ^1.2.0
     esbuild: ^0.17.6
     husky: ^8.0.3
     jsdom: ^21.1.0
@@ -1326,7 +1334,7 @@ __metadata:
     string-dedent: ^3.0.1
     typescript: ^4.9.5
   bin:
-    gplay-audiobook-scraper: ./bin/gplay-audiobook-scraper.mjs
+    gplay-audiobook-scraper: ./dist/main.js
   languageName: unknown
   linkType: soft
 

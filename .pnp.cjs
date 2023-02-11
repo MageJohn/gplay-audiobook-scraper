@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/semver", "npm:7.3.13"],\
             ["ava", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:5.2.0"],\
             ["commander", "npm:10.0.0"],\
+            ["es-main", "npm:1.2.0"],\
             ["esbuild", "npm:0.17.6"],\
             ["husky", "npm:8.0.3"],\
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
@@ -1215,6 +1216,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["es-main", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/es-main-npm-1.2.0-5830179926-b1feaaa71c.zip/node_modules/es-main/",\
+          "packageDependencies": [\
+            ["es-main", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["esbuild", [\
         ["npm:0.17.6", {\
           "packageLocation": "./.yarn/unplugged/esbuild-npm-0.17.6-2b01671dd3/node_modules/esbuild/",\
@@ -1516,6 +1526,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/semver", "npm:7.3.13"],\
             ["ava", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:5.2.0"],\
             ["commander", "npm:10.0.0"],\
+            ["es-main", "npm:1.2.0"],\
             ["esbuild", "npm:0.17.6"],\
             ["husky", "npm:8.0.3"],\
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
