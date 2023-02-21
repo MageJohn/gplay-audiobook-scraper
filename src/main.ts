@@ -5,8 +5,8 @@ import { Command } from "@commander-js/extra-typings";
 import esMain from "es-main";
 
 import { name, version, description } from "../package.json";
-import { formatFFMetadata } from "./formatFFMetadata";
-import { scrapeMetadata } from "./scrapeMetadata";
+import { formatFFMetadata } from "./formatFFMetadata.ts";
+import { scrapeMetadata } from "./scrapeMetadata.ts";
 
 const program = new Command();
 
@@ -24,7 +24,6 @@ export default async function main() {
   await program.parseAsync();
 }
 
-// @ts-ignore -- import.meta was being incorrectly flagged
 if (esMain(import.meta)) {
   await main();
 }

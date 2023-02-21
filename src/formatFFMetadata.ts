@@ -1,5 +1,5 @@
-import dedent from "string-dedent";
-import type { ContentInfo, VolumeOverview } from "./types";
+import { dedent } from "ts-dedent";
+import type { ContentInfo, VolumeOverview } from "./types.ts";
 
 const escapeString = (string: string): string =>
   string.replace(/[=;#\\\n]/g, "$&");

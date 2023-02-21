@@ -6,7 +6,6 @@ import { minVersion } from "semver";
 import { Command } from "@commander-js/extra-typings";
 import esMain from "es-main";
 
-// @ts-ignore -- import assertion is fine in an mjs file
 import manifest from "../package.json" assert { type: "json" };
 
 const outDir = "dist";
@@ -69,7 +68,6 @@ program
     }
   });
 
-// @ts-ignore -- import.meta was being incorrectly flagged
 if (esMain(import.meta)) {
   await program.parseAsync();
 }

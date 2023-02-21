@@ -229,13 +229,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node16-strictest@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "@tsconfig/node16-strictest@npm:1.0.4"
-  checksum: f644352bdb0d5f9c42bfe22d9b3c3b18447fa5e1ff4e99b758392856ee5a478daf525fa1ebbae8157980d47c32109302996a235710a0a158eb6980efe3dd5de6
-  languageName: node
-  linkType: hard
-
 "@types/jsdom@npm:^21.1.0":
   version: 21.1.0
   resolution: "@types/jsdom@npm:21.1.0"
@@ -1319,7 +1312,6 @@ __metadata:
   resolution: "gplay-audiobook-scraper@workspace:."
   dependencies:
     "@commander-js/extra-typings": ^10.0.2
-    "@tsconfig/node16-strictest": ^1.0.4
     "@types/jsdom": ^21.1.0
     "@types/node": ^16.18.12
     "@types/semver": ^7
@@ -1331,8 +1323,8 @@ __metadata:
     jsdom: ^21.1.0
     prettier: ^2.8.4
     semver: ^7.3.8
-    string-dedent: ^3.0.1
-    typescript: ^4.9.5
+    ts-dedent: ^2.2.0
+    typescript: beta
   bin:
     gplay-audiobook-scraper: ./dist/main.js
   languageName: unknown
@@ -2435,13 +2427,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-dedent@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "string-dedent@npm:3.0.1"
-  checksum: b82b25649f04fc0637e8a98be2439e86265e60f5cab1008edd19dced71e3cfaf4184e0df4877d63dd3d80e9cd5ee81f522c6ff63b5c5d6a44fe909755e01e5be
-  languageName: node
-  linkType: hard
-
 "string-width@npm:^1.0.2 || 2 || 3 || 4, string-width@npm:^4.1.0, string-width@npm:^4.2.0, string-width@npm:^4.2.3":
   version: 4.2.3
   resolution: "string-width@npm:4.2.3"
@@ -2568,6 +2553,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ts-dedent@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "ts-dedent@npm:2.2.0"
+  checksum: 93ed8f7878b6d5ed3c08d99b740010eede6bccfe64bce61c5a4da06a2c17d6ddbb80a8c49c2d15251de7594a4f93ffa21dd10e7be75ef66a4dc9951b4a94e2af
+  languageName: node
+  linkType: hard
+
 "type-check@npm:~0.3.2":
   version: 0.3.2
   resolution: "type-check@npm:0.3.2"
@@ -2584,23 +2576,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.5":
-  version: 4.9.5
-  resolution: "typescript@npm:4.9.5"
+"typescript@npm:beta":
+  version: 5.0.0-beta
+  resolution: "typescript@npm:5.0.0-beta"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ee000bc26848147ad423b581bd250075662a354d84f0e06eb76d3b892328d8d4440b7487b5a83e851b12b255f55d71835b008a66cbf8f255a11e4400159237db
+  checksum: a6d625554e63caff6aa744ddb7f5b6672da75f54916a11ae6229b0fb82bc5ddbd47adc5f03cc6dcba2e0f7462dd9b4a076e7c7573bc76286e53d16bda2795836
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
-  version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
+"typescript@patch:typescript@beta#~builtin<compat/typescript>":
+  version: 5.0.0-beta
+  resolution: "typescript@patch:typescript@npm%3A5.0.0-beta#~builtin<compat/typescript>::version=5.0.0-beta&hash=1f5320"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
+  checksum: 8a19ea7339f11b5bcab6f016f40101cd4e5ac47b08793866cbed57be651c5807389f72780d7aee74e4bc3124a066b59f54eb1877eea362d1e64dc788a4afc11a
   languageName: node
   linkType: hard
 

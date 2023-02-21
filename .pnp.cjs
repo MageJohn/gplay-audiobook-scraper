@@ -29,7 +29,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@commander-js/extra-typings", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:10.0.2"],\
-            ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:21.1.0"],\
             ["@types/node", "npm:16.18.12"],\
             ["@types/semver", "npm:7.3.13"],\
@@ -41,8 +40,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
             ["prettier", "npm:2.8.4"],\
             ["semver", "npm:7.3.8"],\
-            ["string-dedent", "npm:3.0.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+            ["ts-dedent", "npm:2.2.0"],\
+            ["typescript", "patch:typescript@npm%3A5.0.0-beta#~builtin<compat/typescript>::version=5.0.0-beta&hash=1f5320"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -334,15 +333,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip/node_modules/@tootallnate/once/",\
           "packageDependencies": [\
             ["@tootallnate/once", "npm:2.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@tsconfig/node16-strictest", [\
-        ["npm:1.0.4", {\
-          "packageLocation": "./.yarn/cache/@tsconfig-node16-strictest-npm-1.0.4-764f549f64-f644352bdb.zip/node_modules/@tsconfig/node16-strictest/",\
-          "packageDependencies": [\
-            ["@tsconfig/node16-strictest", "npm:1.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1520,7 +1510,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["gplay-audiobook-scraper", "workspace:."],\
             ["@commander-js/extra-typings", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:10.0.2"],\
-            ["@tsconfig/node16-strictest", "npm:1.0.4"],\
             ["@types/jsdom", "npm:21.1.0"],\
             ["@types/node", "npm:16.18.12"],\
             ["@types/semver", "npm:7.3.13"],\
@@ -1532,8 +1521,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsdom", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:21.1.0"],\
             ["prettier", "npm:2.8.4"],\
             ["semver", "npm:7.3.8"],\
-            ["string-dedent", "npm:3.0.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+            ["ts-dedent", "npm:2.2.0"],\
+            ["typescript", "patch:typescript@npm%3A5.0.0-beta#~builtin<compat/typescript>::version=5.0.0-beta&hash=1f5320"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -2816,15 +2805,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["string-dedent", [\
-        ["npm:3.0.1", {\
-          "packageLocation": "./.yarn/cache/string-dedent-npm-3.0.1-5676650892-b82b25649f.zip/node_modules/string-dedent/",\
-          "packageDependencies": [\
-            ["string-dedent", "npm:3.0.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["string-width", [\
         ["npm:4.2.3", {\
           "packageLocation": "./.yarn/cache/string-width-npm-4.2.3-2c27177bae-e52c10dc3f.zip/node_modules/string-width/",\
@@ -2963,6 +2943,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ts-dedent", [\
+        ["npm:2.2.0", {\
+          "packageLocation": "./.yarn/cache/ts-dedent-npm-2.2.0-00389a0e6b-93ed8f7878.zip/node_modules/ts-dedent/",\
+          "packageDependencies": [\
+            ["ts-dedent", "npm:2.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["type-check", [\
         ["npm:0.3.2", {\
           "packageLocation": "./.yarn/cache/type-check-npm-0.3.2-a4a38bb0b6-dd3b149564.zip/node_modules/type-check/",\
@@ -2983,10 +2972,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-72dc6f164f-ab417a2f39.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A5.0.0-beta#~builtin<compat/typescript>::version=5.0.0-beta&hash=1f5320", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-1c528894f3-8a19ea7339.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+            ["typescript", "patch:typescript@npm%3A5.0.0-beta#~builtin<compat/typescript>::version=5.0.0-beta&hash=1f5320"]\
           ],\
           "linkType": "HARD"\
         }]\

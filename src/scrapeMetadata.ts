@@ -1,5 +1,5 @@
 import { JSDOM } from "jsdom";
-import type { VolumeOverview, ContentInfo } from "./types";
+import type { VolumeOverview, ContentInfo } from "./types.ts";
 
 export async function scrapeMetadata(file: string) {
   const dom = await JSDOM.fromFile(file, { runScripts: "dangerously" });
