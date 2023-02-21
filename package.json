@@ -15,11 +15,13 @@
   "dependencies": {
     "@commander-js/extra-typings": "^10.0.2",
     "commander": "^10.0.0",
+    "common-tags": "^1.8.2",
     "es-main": "^1.2.0",
     "jsdom": "^21.1.0",
     "ts-dedent": "^2.2.0"
   },
   "devDependencies": {
+    "@types/common-tags": "^1",
     "@types/jsdom": "^21.1.0",
     "@types/node": "^16.18.12",
     "@types/semver": "^7",

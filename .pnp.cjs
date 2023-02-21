@@ -29,11 +29,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@commander-js/extra-typings", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:10.0.2"],\
+            ["@types/common-tags", "npm:1.8.1"],\
             ["@types/jsdom", "npm:21.1.0"],\
             ["@types/node", "npm:16.18.12"],\
             ["@types/semver", "npm:7.3.13"],\
             ["ava", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:5.2.0"],\
             ["commander", "npm:10.0.0"],\
+            ["common-tags", "npm:1.8.2"],\
             ["es-main", "npm:1.2.0"],\
             ["esbuild", "npm:0.17.6"],\
             ["husky", "npm:8.0.3"],\
@@ -333,6 +335,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip/node_modules/@tootallnate/once/",\
           "packageDependencies": [\
             ["@tootallnate/once", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/common-tags", [\
+        ["npm:1.8.1", {\
+          "packageLocation": "./.yarn/cache/@types-common-tags-npm-1.8.1-cb81ee674b-bec6f68c8c.zip/node_modules/@types/common-tags/",\
+          "packageDependencies": [\
+            ["@types/common-tags", "npm:1.8.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -928,6 +939,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["common-tags", [\
+        ["npm:1.8.2", {\
+          "packageLocation": "./.yarn/cache/common-tags-npm-1.8.2-2c30ba69b3-767a6255a8.zip/node_modules/common-tags/",\
+          "packageDependencies": [\
+            ["common-tags", "npm:1.8.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["concat-map", [\
         ["npm:0.0.1", {\
           "packageLocation": "./.yarn/cache/concat-map-npm-0.0.1-85a921b7ee-902a9f5d89.zip/node_modules/concat-map/",\
@@ -1510,11 +1530,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["gplay-audiobook-scraper", "workspace:."],\
             ["@commander-js/extra-typings", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:10.0.2"],\
+            ["@types/common-tags", "npm:1.8.1"],\
             ["@types/jsdom", "npm:21.1.0"],\
             ["@types/node", "npm:16.18.12"],\
             ["@types/semver", "npm:7.3.13"],\
             ["ava", "virtual:aa4156e6d11a95a14782a87bfeeee22b226aff851b03053dd56d7e0457e069194bfa08d94f13b646c92708282d3d1d7d380ecc0162316ca4db3340808a75527e#npm:5.2.0"],\
             ["commander", "npm:10.0.0"],\
+            ["common-tags", "npm:1.8.2"],\
             ["es-main", "npm:1.2.0"],\
             ["esbuild", "npm:0.17.6"],\
             ["husky", "npm:8.0.3"],\

@@ -1,4 +1,4 @@
-import { dedent } from "ts-dedent";
+import { stripIndent } from "common-tags";
 import type { ContentInfo, VolumeOverview } from "./types.ts";
 
 const escapeString = (string: string): string =>
@@ -28,7 +28,7 @@ const formatChapterMetadata = (contentInfo: ContentInfo) =>
       return [...arr, { ...last, end: start }, { title, start }];
     }, [])
     .map(
-      ({ title, start, end = contentInfo[1] }) => dedent`
+      ({ title, start, end = contentInfo[1] }) => stripIndent`
         [CHAPTER]
         TIMEBASE=1/1000
         START=${start}
@@ -56,7 +56,7 @@ const formatBookMetadata = (volumeOverview: VolumeOverview) =>
 export const formatFFMetadata = (
   volumeOverview: VolumeOverview,
   contentInfo: ContentInfo
-) => dedent`
+) => stripIndent`
   ;FFMETADATA
   ${formatBookMetadata(volumeOverview)}
 
