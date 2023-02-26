@@ -1,4 +1,5 @@
 import { stripIndent } from "common-tags";
+
 import type { ContentInfo, VolumeOverview } from "./types.ts";
 
 const escapeString = (string: string): string =>

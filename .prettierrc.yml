@@ -1,0 +1,13 @@
+plugins:
+  - "@trivago/prettier-plugin-sort-imports"
+importOrder:
+  - "^node:"
+  - "<THIRD_PARTY_MODULES>"
+  - "^[.]{2}/"
+  - "^[.]/"
+importOrderSeparation: true
+importOrderSortSpecifiers: true
+importOrderGroupNamespaceSpecifiers: true
+importOrderParserPlugins:
+  - "typescript"
+  - "importAssertions"

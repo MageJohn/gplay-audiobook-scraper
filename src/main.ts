@@ -4,7 +4,8 @@ import { stdout } from "node:process";
 import { Command } from "@commander-js/extra-typings";
 import esMain from "es-main";
 
-import { name, version, description } from "../package.json";
+import { description, name, version } from "../package.json";
+
 import { formatFFMetadata } from "./formatFFMetadata.ts";
 import { scrapeMetadata } from "./scrapeMetadata.ts";
 

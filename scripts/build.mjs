@@ -2,9 +2,9 @@
 import * as fs from "node:fs/promises";
 
 import * as esbuild from "esbuild";
-import { minVersion } from "semver";
 import { Command } from "@commander-js/extra-typings";
 import esMain from "es-main";
+import { minVersion } from "semver";
 
 import manifest from "../package.json" assert { type: "json" };
 

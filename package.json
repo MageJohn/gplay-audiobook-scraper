@@ -21,6 +21,7 @@
     "ts-dedent": "^2.2.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
     "@types/common-tags": "^1",
     "@types/jsdom": "^21.1.0",
     "@types/node": "^16.18.12",

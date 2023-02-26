@@ -12,3 +12,6 @@ dist/
 # Documentation here: https://yarnpkg.com/features/zero-installs
 !.yarn/cache
 #.pnp.*
+
+# this can still appear because of caches
+node_modules/
