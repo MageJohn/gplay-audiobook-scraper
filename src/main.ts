@@ -15,9 +15,9 @@ program
   .name(name)
   .version(version)
   .description(description)
-  .argument("<file>")
-  .action(async (file) => {
-    const { volumeOverview, contentInfo } = await scrapeMetadata(file);
+  .argument("<url>")
+  .action(async (url) => {
+    const { volumeOverview, contentInfo } = await scrapeMetadata(url);
     stdout.write(formatFFMetadata(volumeOverview, contentInfo));
   });
 

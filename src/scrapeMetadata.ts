@@ -2,8 +2,8 @@ import { JSDOM } from "jsdom";
 
 import type { ContentInfo, VolumeOverview } from "./types.ts";
 
-export async function scrapeMetadata(file: string) {
-  const dom = await JSDOM.fromFile(file, { runScripts: "dangerously" });
+export async function scrapeMetadata(url: string) {
+  const dom = await JSDOM.fromURL(url, { runScripts: "dangerously" });
 
   const contentInfo = dom.window["_OC_contentInfo"] as ContentInfo | undefined;
   const volumeOverview = dom.window["_OC_volumeOverview"] as
