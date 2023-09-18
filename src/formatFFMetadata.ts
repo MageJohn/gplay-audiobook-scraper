@@ -1,4 +1,4 @@
-import { stripIndent } from "common-tags";
+import { stripIndent, stripIndents } from "common-tags";
 
 import type { ContentInfo, VolumeOverview } from "./types.ts";
 
@@ -57,7 +57,7 @@ const formatBookMetadata = (volumeOverview: VolumeOverview) =>
 export const formatFFMetadata = (
   volumeOverview: VolumeOverview,
   contentInfo: ContentInfo
-) => stripIndent`
+) => stripIndents`
   ;FFMETADATA
   ${formatBookMetadata(volumeOverview)}
 
